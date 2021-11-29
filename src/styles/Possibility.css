@@ -1,0 +1,35 @@
+.possibility__image img {
+	width: 100%;
+}
+
+.possibility__content {
+	margin-top: auto;
+}
+
+.possibility__content h6 {
+	color: #71e5ff;
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+.possibility__content h2 {
+	font-size: 5vw;
+	margin: 1rem 0;
+}
+
+.possibility__content p {
+	color: var(--color-text);
+	font-size: 15px;
+	margin-bottom: 1.3rem;
+}
+
+.possibility__content h6:last-child {
+	color: var(--color-subtext);
+	font-size: 1rem;
+}
+
+@media screen and (min-width: 760px) {
+	.possibility__content h2 {
+		font-size: clamp(2rem, 2.6vw, 3vw);
+	}
+}

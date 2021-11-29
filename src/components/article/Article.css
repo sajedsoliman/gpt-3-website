@@ -1,0 +1,33 @@
+.article {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.article__image {
+	width: 100%;
+	object-fit: cover;
+}
+
+.article__body {
+	display: flex;
+	flex-direction: column;
+	background: var(--color-footer);
+	padding: 1.3rem;
+	color: white;
+
+	flex-grow: 1;
+}
+
+.article__title {
+	font-size: 1.45rem;
+}
+
+.article__action {
+	margin-top: auto;
+	text-transform: capitalize;
+	letter-spacing: 0.7px;
+	font-weight: 500;
+	font-size: 14.5px;
+	cursor: pointer;
+}

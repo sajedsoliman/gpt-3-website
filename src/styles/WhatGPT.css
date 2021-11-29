@@ -1,0 +1,94 @@
+.section__whatGPT3 {
+	display: grid;
+	gap: 2.8rem;
+	background: radial-gradient(
+		circle at 30% -100%,
+		#042c54 25%,
+		#042c54 85%,
+		#1b78de 100%
+	);
+	padding: 2rem;
+}
+
+.whatGPT3__feature {
+	display: flex;
+	flex-direction: column;
+}
+
+.whatGPT3__feature h2 {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 1.4rem;
+	flex: 1;
+	margin-bottom: 0.5rem;
+}
+
+.whatGPT3__feature h2::before {
+	position: absolute;
+	content: "";
+	background: var(--gradient-bar);
+	height: 3px;
+	width: 2rem;
+}
+
+.whatGPT3__feature p {
+	color: var(--color-text);
+	font-size: 0.9rem;
+}
+
+.whatGPT__explore-library {
+}
+
+.whatGPT__explore-library h2 {
+	margin-bottom: 0.8rem;
+	font-size: 5vw;
+	font-weight: 900;
+}
+
+.whatGPT__explore-library span {
+	color: var(--color-subtext);
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.whatGPT__features-container {
+	display: grid;
+	/* grid-template-columns: repeat(3, 1fr); */
+	gap: 1.5rem;
+}
+
+@media screen and (min-width: 760px) {
+	.whatGPT__explore-library {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.whatGPT__explore-library h2 {
+		font-size: 3vw;
+		max-width: 600px;
+		margin-bottom: 0;
+	}
+
+	.whatGPT__features-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (min-width: 960px) {
+	.section__whatGPT3 {
+		gap: 4rem;
+	}
+	.whatGPT3__feature {
+		flex-direction: row;
+	}
+	.whatGPT3__feature h2 {
+		margin-bottom: 0;
+	}
+	.whatGPT3__feature p {
+		max-width: 22rem;
+	}
+	.whatGPT__features-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

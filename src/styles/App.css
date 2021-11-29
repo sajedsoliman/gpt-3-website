@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+	font-family: var(--font-family);
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--color-bg);
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+a {
+	color: unset;
+	text-decoration: none;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+ul,
+ol {
+	list-style-type: none;
+}
+
+input,
+button {
+	border: none;
+}
+
+.gradient__bg {
+	/* ff 3.6+ */
+	background: -moz-radial-gradient(circle at 3% 25%, #002853 0%, #040c18 100%);
+
+	/* safari 5.1+,chrome 10+ */
+	background: -webkit-radial-gradient(
+		circle at 3% 25%,
+		#002853 0%,
+		#040c18 100%
+	);
+
+	/* opera 11.10+ */
+	background: -o-radial-gradient(circle at 3% 25%, #002853 0%, #040c18 100%);
+
+	/* ie 10+ */
+	background: -ms-radial-gradient(circle at 3% 25%, #002853 0%, #040c18 100%);
+
+	/* global 92%+ browsers support */
+	background: radial-gradient(circle at 3% 25%, #002853 0%, #040c18 100%);
+}
+
+.gradient__text {
+	background: var(--gradient-text);
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.gradient__bar {
+	background: var(--gradient-bar);
+	height: 3px;
+}
+
+.section {
+	min-height: 100vh;
+}
+
+button {
+	cursor: pointer;
+}
+
+.section__padding {
+	padding: 4rem 6rem;
+}
+.section__margin {
+	margin: 4rem 6rem;
+}
+
+.grid__layout-2rows {
+	display: grid;
+	gap: 2rem;
+}
+
+.push-right {
+	margin-left: auto;
+}
+.push-left {
+	margin-right: auto;
+}
+
+/* media queries */
+@media screen and (max-width: 960px) {
+	.section__padding {
+		padding: 4rem;
+	}
+	.section__margin {
+		margin: 4rem;
+	}
+}
+@media screen and (max-width: 600px) {
+	.section__padding {
+		padding: 2.6rem;
+	}
+	.section__margin {
+		margin: 2.6rem;
+	}
+}
+@media screen and (min-width: 760px) {
+	.grid__layout-2rows {
+		grid-template-columns: 1fr 1fr;
+	}
+}
